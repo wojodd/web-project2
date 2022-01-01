@@ -1,0 +1,596 @@
+
+body{
+font-family: 'Poppins', sans-serif;
+background-color: #748890;
+text-align: center;
+display: flex;
+height: 100vh;
+width: 100%;
+justify-content: center;
+align-items: center;
+padding: 0 20px;}
+
+/* القوائم ------------------------------------------*/ 
+.nav {
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    top: -44%;
+  right: -6%;
+    padding: 0 20px;
+    border-radius: 40px;
+   
+}
+.nav-item {
+    color: #ffffff;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 6px;
+    z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    position: relative;
+    
+}
+.nav-item:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #dfe2ea;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+.nav-item:not(.is-active):hover:before {
+    opacity: 1;
+    bottom: 0;}
+
+.nav-item:not(.is-active):hover {
+    color: rgb(192, 217, 247);/* الظل الابيض اللي على القوائم */
+
+}
+.nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+}
+@media (max-width: 580px) {
+    .nav {
+        overflow: auto; }}
+
+/*  نهاية القوائم  ------------------------------------------*/
+
+
+#logo1{ /*الشعار */
+position: relative;
+top: -44%;
+right: 24%;} 
+
+.bac-img{ /* img for home */
+position: absolute;
+
+}
+
+
+/*  الكلمة في الداية " لذيذ ومفيد " -----------------*/
+
+h1{
+   font-family:'SignPainter';
+   font-size: 700%;
+   position: absolute;
+   color: #cbd7da;
+   left: 29%;
+   top: 40%;
+   }
+p{
+   font-family:'SignPainter';
+   font-size: 250%;
+   position: absolute;
+   color: #cbd7da;
+   right:45%;
+   top: 140%;
+   }   
+
+
+/*  الزر في البداية  ------------------------------------------*/
+
+.button {
+    border-radius: 70px;
+    border:  1px solid #cbd7da;
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 160%;
+    right: 55%;
+    background-color: transparent;
+color: #cbd7da
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  color: white;
+  
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+    
+  }
+  /*   نهاية الزر في البداية   ------------------------------------------*/
+
+    
+ 
+
+
+
+  .bac-img2{ /* img for home 2 */
+    position: absolute;
+  top: 120%;
+  left:55%;
+  }
+  
+  .bac-img3{ /* img for  فراولة فطور  */
+    position: absolute;
+  top: 135%;
+  right: 80%;
+  }
+
+
+
+  /*--------------------------*/
+  
+
+
+  * {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .cotn_principal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  
+  }
+  
+  
+  .cont_centrar {
+    position: relative;
+    float: left;
+     width: 100%;
+  }
+  
+  .cont_login {
+    position: relative;
+    width: 640px;
+  left: 50%;
+  margin-left: -320px;
+    
+  }
+  
+  .cont_back_info {  
+  position: relative;
+    float: left;
+    width: 640px;
+    height: 380px;
+  overflow: hidden;
+    background-color: black;
+    margin-top: 100px;
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+  }
+  
+  .cont_forms {
+    position: absolute;
+    overflow: hidden;
+    top:100px;
+  left: 0px;
+    width: 320px;
+    height: 380px;
+    background-color: black;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+  .cont_forms_active_login {
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+    height: 420px;  
+  top:20px;
+  left: 0px;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  
+  }
+  
+  .cont_forms_active_sign_up {
+  box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+    height: 420px;  
+  top:20px;
+  left:320px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+  .cont_img_back_grey {
+    position: absolute;
+    width: 800px;
+  top:-70px;
+    left: -116px;
+  }
+  
+  .cont_img_back_grey > img {
+    width: 100%;
+   -webkit-filter: grayscale(100%);     filter: grayscale(100%);
+  opacity: 0.2;
+  animation-name: animar_fondo;
+    animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  }
+  
+  .cont_img_back_ {
+    position: absolute;
+    width: 950px;
+  top:-80px;
+    left: -116px;
+  }
+  
+  .cont_img_back_ > img {
+    width: 100%;
+  opacity: 0.3;
+  animation-name: animar_fondo;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+  
+  .cont_forms_active_login > .cont_img_back_ {
+  top:0px;  
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+  .cont_forms_active_sign_up > .cont_img_back_ {
+  top:0px;  
+  left: -435px;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+   
+  
+  .cont_info_log_sign_up {
+  position: absolute;
+    width: 640px;
+    height: 280px;
+    top: 100px;
+  z-index: 1;
+  } 
+  
+  .col_md_login {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  
+  .col_md_login > h2 {
+    font-weight: 400;
+  margin-top: 70px;
+      color: #757575;
+  }
+  
+  .col_md_login > p {
+   font-weight: 400;
+  margin-top: 15px;
+  width: 80%;
+      color: #37474F;
+  }
+  
+  .btn_login { 
+  background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+  width: 200px;
+  border-radius:3px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+    color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  }
+  
+  .col_md_sign_up {
+    position: relative;
+    float: left;
+    width: 50%;  
+  }
+  
+  .cont_ba_opcitiy > h2 {
+    font-weight: 400;
+    color: #fff;
+  }
+  
+  .cont_ba_opcitiy > p {
+   font-weight: 400;
+  margin-top: 15px;
+   color: #fff;
+  }
+  /* ----------------------------------
+  background text    
+  ------------------------------------
+   */
+  .cont_ba_opcitiy {
+    position: relative;
+    background-color: rgba(120, 144, 156, 0.55);
+    width: 80%;
+    border-radius:3px ;
+  margin-top: 60px;
+  padding: 15px 0px;
+  }
+  
+  .btn_sign_up { 
+  background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+  width: 200px;
+  border-radius:3px;
+  box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+    color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  }
+  .cont_forms_active_sign_up {
+  z-index: 2;  
+  }
+  
+  
+  @-webkit-keyframes animar_fondo {
+    from { -webkit-transform: scale(1) translate(0px);
+  -moz-transform: scale(1) translate(0px);
+  -ms-transform: scale(1) translate(0px);
+  -o-transform: scale(1) translate(0px);
+  transform: scale(1) translate(0px); }
+    to { -webkit-transform: scale(1.5) translate(50px);
+  -moz-transform: scale(1.5) translate(50px);
+  -ms-transform: scale(1.5) translate(50px);
+  -o-transform: scale(1.5) translate(50px);
+  transform: scale(1.5) translate(50px); }
+  }
+  @-o-keyframes identifier {
+    from { -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+    to { -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5); }
+  
+  }
+  @-moz-keyframes identifier {
+    from { -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+    to { -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5); }
+  
+  }
+  @keyframes identifier {
+    from { -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
+    to { -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5); }
+  }
+  .cont_form_login {
+    position: absolute;
+    opacity: 0;
+  display: none;
+    width: 320px;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+  .cont_forms_active_login {
+  z-index: 2;  
+  }
+  .cont_forms_active_login .cont_form_login {
+  }
+  
+  .cont_form_sign_up {
+    position: absolute;
+    width: 320px;
+  float: left;
+    opacity: 0;
+  display: none;
+    -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+  
+    
+  .cont_form_sign_up > input {
+  text-align: left;
+    padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+    width: 260px;
+  border: none;
+      color: #757575;
+  }
+  
+  .cont_form_sign_up > h2 {
+  margin-top: 50px; 
+  font-weight: 400;
+    color: #757575;
+  }
+  
+  
+  .cont_form_login > input {
+    padding: 15px 5px;
+  margin-left: 10px;
+  margin-top: 20px;
+    width: 260px;
+  border: none;
+  text-align: left;
+    color: #757575;
+  }
+  
+  .cont_form_login > h2 {
+  margin-top: 110px; 
+  font-weight: 400;
+    color: #757575;
+  }
+  .cont_form_login > a,.cont_form_sign_up > a  {
+    color: #757575;
+      position: relative;
+      float: left;
+      margin: 10px;
+  margin-left: 30px;
+  }
+  .signupSection {
+  background: url(asparagus-tart_BeaLubas_4-913x1370.JPG);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(33, 33, 33, 0.5);
+}
+
+.info {
+  width: 45%;
+  background: rgba(35, 38, 38, 0.8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(37, 40, 40, 0.8);
+  h2 {
+    padding-top: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgb(10, 180, 180);
+  }
+}
+
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(59, 68, 68, 0.8);
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgb(10, 180, 180);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, 0.2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#join-btn {
+  border: 1px solid rgb(10, 180, 180);
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+  &:hover {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px 80px;
+  }
+}
